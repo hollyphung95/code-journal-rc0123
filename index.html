@@ -9,6 +9,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Proza+Libre:wght@400;500;600&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/styles.css">
@@ -29,21 +34,21 @@
         <h1>New Entry</h1>
         <div class="row">
           <div class="column-half">
-            <img src="images/placeholder-image-square.jpg" alt="placeholder-image">
+            <img id="entry-photo-display" src="images/placeholder-image-square.jpg" alt="placeholder-image">
           </div>
           <div class="column-half">
             <label for="entry-title">Title</label>
             <input required name="title" type="text" id="entry-title" placeholder="Ana Lovelace">
 
-            <label for="entry-photo-url">Photo URL</label>
-            <input required name="url" type="url" placeholder="/images/placeholder-image-square.jpg">
+            <label for="photoUrl">Photo URL</label>
+            <input required id="photoUrl" name="photoUrl" type="url" placeholder="/images/placeholder-image-square.jpg">
           </div>
         </div>
 
         <div class="row">
           <div class="column-full">
             <label for="entry-notes">Notes</label>
-            <textarea required rows="8" name="notes" id="entry-notes"
+            <textarea required rows="5" name="notes" id="entry-notes"
               placeholder="Augusta Ada King, Countess of Lovelace was an English mathematician and writer, chiefly known for her work on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine.."></textarea>
           </div>
         </div>
