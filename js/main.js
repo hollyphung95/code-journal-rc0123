@@ -2,12 +2,12 @@ var $entryForm = document.querySelector('#entry-form');
 var $entryImg = $entryForm.querySelector('img');
 
 var $photoUrl = document.querySelector('#photoUrl');
-$photoUrl.addEventListener('change', function (event) {
+$photoUrl.addEventListener('input', function (event) {
   $entryImg.setAttribute('src', event.target.value);
 });
 
 var $saveEntry = document.querySelector('#save-entry');
-$saveEntry.addEventListener('click', saveBtnClick);
+$saveEntry.addEventListener('submit', saveBtnClick);
 
 function saveBtnClick(event) {
   event.preventDefault();
