@@ -22,45 +22,117 @@
 <body>
   <header>
     <div class="header-container">
-      <div class="header-container">
-        <h2 class="header-row">Code Journal</h2>
-      </div>
+      <h2 class="header-container">Code Journal</h2>
     </div>
   </header>
   <main class="container">
-    <div data-view="entry-form">
+    <div data-view="entry-form" class="hidden">
       <form id="entry-form">
-
-        <h1>New Entry</h1>
-        <div class="row">
-          <div class="column-half">
-            <img id="entry-photo-display" src="images/placeholder-image-square.jpg" alt="placeholder-image">
+        <div class="main-container">
+          <h1>New Entry</h1>
+          <div class="row">
+            <div class="column-half">
+              <img id="entry-photo-display" src="images/placeholder-image-square.jpg" alt="placeholder-image">
+            </div>
+            <div class="column-half">
+              <h3 class="title">Ana Lovelace</h3>
+            </div>
           </div>
-          <div class="column-half">
-            <label for="entry-title">Title</label>
-            <input required name="title" type="text" id="entry-title" placeholder="Ana Lovelace">
 
-            <label for="photoUrl">Photo URL</label>
-            <input required id="photoUrl" name="photoUrl" type="url" placeholder="/images/placeholder-image-square.jpg">
+          <div class="row">
+            <div class="column-full">
+              <p>
+                Augusta Ada King, Countess of Lovelace was an English mathematician and writer,
+                chiefly known for her work on Charles Babbage's proposed mechanical general-purpose
+                computer, the Analytical Engine..
+              </p>
+              <p>
+                She was the first to recognize that the machine had applications beyond
+                pure calculation, and to have published the first algorithm intended to be
+                carried out by such a machine.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="row">
-          <div class="column-full">
-            <label for="entry-notes">Notes</label>
-            <textarea required rows="5" name="notes" id="entry-notes"
-              placeholder="Augusta Ada King, Countess of Lovelace was an English mathematician and writer, chiefly known for her work on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine.."></textarea>
+          <div class="save">
+            <button type="submit" id="save-entry">Save</button>
           </div>
-        </div>
-
-        <div class="form-actions">
-          <button type="submit" id="save-entry">Save</button>
         </div>
       </form>
     </div>
 
-    <div data-view="entries" class="hidden">
-      <ul></ul>
+    <div data-view="entries">
+      <ul>
+        <li>
+          <div class="header-container">
+            <h2 class="main-container">Entries</h2>
+            <div class="new">
+              <h1 class="main-header">Entries</h1>
+              <button class="main-header">New</button>
+            </div>
+          </div>
+          <div class="main-container">
+            <div class="row">
+              <div class="column-half">
+                <img class="entry-photo-display" src="images/placeholder-image-square.jpg" alt="placeholder-image">
+              </div>
+              <div class="column-half">
+                <h3>Ana Lovelace</h3>
+                <p>
+                  Augusta Ada King, Countess of Lovelace was an English mathematician and writer, chiefly known for her
+                  work on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine.
+                </p>
+                <p>
+                  She was the first to recognize that the machine had applications beyond pure calculation,
+                  and to have published the first algorithm intended to be carried out by such a machine.
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="container">
+            <div class="row">
+              <div class="column-half">
+                <img class="entry-photo-display" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png"
+                  alt="placeholder-image">
+              </div>
+              <div class="column-half">
+                <h3>Ana Lovelace</h3>
+                <p>
+                  Augusta Ada King, Countess of Lovelace was an English mathematician and writer, chiefly known for her
+                  work on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine.
+                </p>
+                <p>
+                  She was the first to recognize that the machine had applications beyond pure calculation,
+                  and to have published the first algorithm intended to be carried out by such a machine.
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="container">
+            <div class="row">
+              <div class="column-half">
+                <img class="entry-photo-display" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png"
+                  alt="placeholder-image">
+              </div>
+              <div class="column-half">
+                <h3>Ana Lovelace</h3>
+                <p>
+                  Augusta Ada King, Countess of Lovelace was an English mathematician and writer, chiefly known for her
+                  work on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine.
+                </p>
+                <p>
+                  She was the first to recognize that the machine had applications beyond pure calculation,
+                  and to have published the first algorithm intended to be carried out by such a machine.
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
   </main>
   <script src="js/data.js"></script>
