@@ -6,6 +6,7 @@ var data = {
   editing: null,
   nextEntryId: 1
 };
+
 var storedDataJSONmodel = localStorage.getItem('data');
 
 if (storedDataJSONmodel !== null) {
